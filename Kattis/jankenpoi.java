@@ -64,5 +64,6 @@ public class jankenpoi {
 			
 			n = scan.nextInt();
 		}
+		scan.close();
 	}
 }

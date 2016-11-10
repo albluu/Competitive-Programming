@@ -10,7 +10,7 @@ public class cetvrta {
 		int d = scan.nextInt();
 		int e = scan.nextInt();
 		int f = scan.nextInt();
-		
+		scan.close();
 		int x, y;
 		if (a == c) {
 			x = e;

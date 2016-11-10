@@ -11,7 +11,7 @@ public class different {
 			long n2 = Long.parseLong(in[1]);
 			System.out.println(Math.abs(n1 - n2));
 		} while (scan.hasNextLine());
-
+		scan.close();
 	}
 
 }

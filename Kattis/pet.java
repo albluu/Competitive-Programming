@@ -17,7 +17,7 @@ public class pet {
 			}
 		}
 		System.out.println(m[0] + 1 + " " + m[1]);
-
+		scan.close();
 	}
 
 }

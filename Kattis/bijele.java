@@ -8,7 +8,7 @@ public class bijele {
 		for (int x = 0; x < 6; x++) {
 			System.out.print(s[x] - scan.nextInt() + " ");
 		}
-
+		scan.close();
 	}
 
 }

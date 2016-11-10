@@ -42,6 +42,7 @@ public class classy {
 			}
 			System.out.println("==============================");
 		}
+		scan.close();
 	}
 	private static class Comp implements Comparator<String> {
 
