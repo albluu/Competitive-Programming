@@ -1,33 +1,28 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class arstr {
+public class armystrengthhard {
 
 	public static void main(String[] args) {
 		FastScanner scan = new FastScanner();
 		int t = scan.nextInt();
 
 		for (int x = 0; x < t; x++) {
-			int ng = scan.nextInt();
-			int nm = scan.nextInt();
-			PriorityQueue<Integer> ngp = new PriorityQueue<Integer>();
-			PriorityQueue<Integer> nmp = new PriorityQueue<Integer>();
-			for (int y = 0; y < ng; y++) {
-				ngp.add(scan.nextInt());
+			scan.nextInt();
+			scan.nextInt();
+			String[] gzs = scan.nextLine().split(" ");
+			String[] mzs = scan.nextLine().split(" ");
+			int gzm = -1;
+			int mzm = -1;
+			for (String s : gzs) {
+				gzm = Math.max(gzm, Integer.parseInt(s));
 			}
-			for (int y = 0; y < nm; y++) {
-				nmp.add(scan.nextInt());
+			for (String s : mzs) {
+				mzm = Math.max(mzm, Integer.parseInt(s));
 			}
-			int ngi = ngp.poll();
-			int nmi = nmp.poll();
-			if (ngi < nmi) {
-				System.out.println("MechaGodzilla");
-			} else if (ngi >= nmi){
-				System.out.println("Godzilla");
-			} 
+			System.out.println(gzm >= mzm ? "Godzilla" : "MechaGodzilla");
 		}
 
 	}
